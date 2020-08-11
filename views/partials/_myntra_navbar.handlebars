@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <img src="../../images/icon.jpg" class="icon" alt="icon" srcset="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">MEN </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">WOMEN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">KIDS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">HOME & LIVING</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">ESSENTIALS</a>
+            </li>
+        </ul>
+        <span class="search">
+            <span class="search-icon">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                    <path fill-rule="evenodd"
+                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                </svg>
+            </span>
+            <input type="search" placeholder=" search for products, brands and more" class="search-bar">
+        </span>
+        <ul class="navbar-nav ml-auto">
+            {{#if user}}
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile/all-profiles">Profiles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profile/create-profile">Add Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/logout">Logout</a>
+            </li>
+            {{else}}
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/auth/register">Register</a>
+            </li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

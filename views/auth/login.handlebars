@@ -1,0 +1,36 @@
+<section class="align-items-center justify-content-center d-flex loginComponent">
+    <div class="col-md-6 mx-auto ">
+        <div class="card card-body">
+            <h4 class="display-6  text-capitalize text-left">Sign-In</h4>
+
+            <form method="POST" action="/auth/login" novalidate>
+                <div class="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" class="form-control" name="email" />
+                </div>
+                <div class="form-group">
+                    <label htmlFor="password">Password</label>
+                    <span class="float-right">
+                        <a href="#">Forgot Password?</a>
+                    </span>
+                    <input type="password" class="form-control" name="password" />
+                </div>
+                <div class="form-group">
+                    <label htmlFor="username"></label>
+                    <button class="btn btn-dark btn-block">Sign-In</button>
+                </div>
+
+                <p>
+                    By continuing an account, you agree to Myntra's Conditions of
+                    Use and Privacy Notice.
+                </p>
+                <hr />
+                <span>New to Myntra?</span>
+                <p class="create-acc">
+
+                    <a href="/auth/register">Create your own account</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>

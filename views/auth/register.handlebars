@@ -1,0 +1,44 @@
+<section class="vh-100 align-items-center justify-content-center d-flex registerComponent">
+    <div class="col-md-6 mx-auto ">
+        {{!-- <img src="register-logo.png" alt="logo" /> --}}
+        <div class="card card-body">
+            <h4 class="display-6  text-capitalize text-left">
+                Create account
+            </h4>
+
+            <form action="/auth/register" method="POST" novalidate>
+                <div class="form-group">
+                    <label htmlFor="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" />
+                </div>
+                <div class="form-group">
+                    <label htmlFor="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" />
+                </div>
+                <div class="form-group">
+                    <label htmlFor="confirm_password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" />
+                </div>
+                <div class="form-group">
+                    <label htmlFor="username"></label>
+                    <button class="btn btn-dark btn-block">
+                        Create your account
+                    </button>
+                </div>
+                <hr />
+                <p>
+                    By creating an account, you agree to Myntra's Conditions of
+                    Use and Privacy Notice.
+                </p>
+                <p>
+                    Already have an account?
+                    <a href="/auth/login">Sign In</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
